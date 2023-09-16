@@ -1,0 +1,23 @@
+[2023-09-10 17:48:09,512: WARNING/MainProcess] C:\Users\HP\Enviornments\project2_env\Lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2023-09-10 17:48:10,305: INFO/SpawnPoolWorker-1] child process 13956 calling self.run()
+[2023-09-10 17:48:10,311: INFO/SpawnPoolWorker-5] child process 4988 calling self.run()
+[2023-09-10 17:48:10,328: INFO/SpawnPoolWorker-3] child process 24192 calling self.run()
+[2023-09-10 17:48:10,336: INFO/SpawnPoolWorker-4] child process 19188 calling self.run()
+[2023-09-10 17:48:10,339: INFO/SpawnPoolWorker-2] child process 12196 calling self.run()
+[2023-09-10 17:48:10,345: INFO/SpawnPoolWorker-7] child process 15892 calling self.run()
+[2023-09-10 17:48:10,352: INFO/SpawnPoolWorker-6] child process 20216 calling self.run()
+[2023-09-10 17:48:10,380: INFO/SpawnPoolWorker-8] child process 10064 calling self.run()
+[2023-09-10 17:48:16,922: ERROR/MainProcess] consumer: Cannot connect to redis://locolhost:6379//: Error 11001 connecting to locolhost:6379. getaddrinfo failed..
+Trying again in 2.00 seconds... (1/100)
+
+[2023-09-10 17:48:21,615: ERROR/MainProcess] consumer: Cannot connect to redis://locolhost:6379//: Error 11001 connecting to locolhost:6379. getaddrinfo failed..
+Trying again in 4.00 seconds... (2/100)
+
+[2023-09-10 17:48:28,365: ERROR/MainProcess] consumer: Cannot connect to redis://locolhost:6379//: Error 11001 connecting to locolhost:6379. getaddrinfo failed..
+Trying again in 6.00 seconds... (3/100)
+
