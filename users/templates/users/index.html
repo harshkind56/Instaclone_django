@@ -1,0 +1,10 @@
+{% extends "users/base.html" %}
+ {% block content %}
+{%  if messages %}
+	{% for message in messages %}
+		{{message.tags}}
+		{{ message }}
+	{% endfor %}
+{%  endif %}
+<h1> index </h1>
+ {% endblock %}

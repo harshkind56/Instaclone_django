@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'users/style.css' %}">
+
+       
+
+</head>
+<body>
+  <header>  </header>
+    <main>
+        <div class="page">
+            <div class="header">
+              
+                <img src="https://i.imgur.com/zqpwkLQ.png" />
+              
+              
+              
+              <div>
+                
+                
+              </div>
+            </div>
+            <div class="container">
+            	
+              <form method="POST">
+              	{% csrf_token %}	
+               	{%  for field in form.visible_fields %}
+               		<div class="label"> {{field.label}} </div>
+               		<div class="errors">{{ field.errors }}</div>
+               		{{ field }}
+               	{% endfor %}
+
+
+               <button type="submit" name="action" class="button">
+          Submit
+        </button>
+
+              </form>
+              
+              <ul>
+                <li>By signing up, you agree to our</li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Data Policy</a></li>
+                <li>and</li>
+                <li><a href="">Cookies Policy</a> .</li>
+             </ul>
+           
+            </div>
+        </div>
+        <div class="option">
+           <p>Have an account? <a href="">Log in</a></p>
+        </div>
+        
+        <div class="footer">
+           
+        </div>
+      </main>
+      
+</body>
+</html>
